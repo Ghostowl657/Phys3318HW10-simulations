@@ -25,7 +25,7 @@ tspan = linspace(0,finalT,fineness);
 y0 = [0 0];
 sol = ode45(M,tspan,y0);
 
-plotting the solution
+% plotting the solution
 yVal = deval(sol,tspan,1);
 plot(tspan,yVal)
 grid on
